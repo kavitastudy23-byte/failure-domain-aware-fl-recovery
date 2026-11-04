@@ -1,0 +1,11 @@
+seeds: [101, 102, 103, 104, 105]
+failure_probability: 0.20
+failure_domains: 5
+clients_per_round: 10
+scalability_registered_clients: [100, 200, 500, 1000]
+controlled_events_per_seed: 30
+weights:
+  placement: [0.30, 0.20, 0.20, 0.30]
+  recovery: [0.25, 0.10, 0.15, 0.35, 0.15]
+  eta_value: 0.25
+recovery_value_threshold: 0.0

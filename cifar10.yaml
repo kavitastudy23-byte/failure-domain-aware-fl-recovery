@@ -1,0 +1,21 @@
+dataset: cifar10
+data_root: ./data/cifar10
+num_clients: 20
+clients_per_round: 10
+rounds: 50
+batch_size: 64
+local_steps: 10
+optimizer: sgd
+learning_rate: 0.01
+momentum: 0.0
+weight_decay: 0.0
+dirichlet_alpha: 0.5
+seeds: [101, 102, 103, 104, 105]
+failure_probability: 0.20
+failure_domains: 5
+checkpoint:
+  tau_min: 1
+  tau_max: 10
+  lambda_lost: 1.0
+  lambda_ckpt: 1.0
+  checkpoint_cost: 1.0
