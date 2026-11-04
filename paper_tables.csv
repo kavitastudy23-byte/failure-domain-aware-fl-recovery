@@ -1,0 +1,25 @@
+experiment,dataset,method_or_strategy,accuracy_pct,RSR_pct,CSR_pct,LWR_pct,saved_pct,recovery_time,normalized_cost,checkpoint_communication
+independent,CIFAR-10,FedAvg/Drop,22.54,0,,100,0,,,0
+independent,CIFAR-10,Restart,23.46,100,,100,0,,,0
+independent,CIFAR-10,Fixed checkpointing,22.46,100,,8.98,91.02,,,1.92 GB
+independent,CIFAR-10,Optimized checkpointing,22.45,100,,0,100,,,3.83 GB
+independent,CIFAR-10,Proposed framework,22.45,100,,0,100,,,3.83 GB
+independent,FEMNIST,Fixed checkpointing,,100,,68.4,31.6,,,417.7 MB
+independent,FEMNIST,Optimized checkpointing,,100,,48.2,51.8,,,617.5 MB
+independent,FEMNIST,Proposed framework,,100,,48.2,51.8,,,617.5 MB
+correlated,CIFAR-10,Same-domain,,0,0,100,0,N/A,,
+correlated,CIFAR-10,Nearest-resource,,0,0,100,0,N/A,,
+correlated,CIFAR-10,Random cross-domain,,100,100,33.3,66.7,0.3504 s,,
+correlated,CIFAR-10,Proposed FD-aware,,100,100,33.3,66.7,0.2202 s,,
+correlated,FEMNIST,Same-domain,,0,0,100,0,N/A,,
+correlated,FEMNIST,Nearest-resource,,74.7,74.7,50.2,49.8,186.0 ms,,
+correlated,FEMNIST,Random cross-domain,,100,100,33.3,66.7,248.2 ms,,
+correlated,FEMNIST,Proposed FD-aware,,100,100,33.3,66.7,190.5 ms,,
+recovery,CIFAR-10,Always Restart,,100,,100,0,0.1142 s,0.4994,
+recovery,CIFAR-10,Always Resume,,33.3,,83.3,16.7,0.1553 s,0.7307,
+recovery,CIFAR-10,Always Migrate,,33.3,,83.3,16.7,0.1739 s,0.8379,
+recovery,CIFAR-10,Dynamic Recovery,,100,,76.7,23.3,0.0865 s,0.3944,
+recovery,FEMNIST,Always Restart,,100,,100,0,175.4 ms,0.752,
+recovery,FEMNIST,Always Resume,,48.7,,66.6,33.4,591.9 ms,3.066,
+recovery,FEMNIST,Always Migrate,,52.7,,70.0,30.0,638.6 ms,3.325,
+recovery,FEMNIST,Dynamic Recovery,,100,,63.3,36.7,128.6 ms,0.492,

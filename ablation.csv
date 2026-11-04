@@ -1,0 +1,5 @@
+configuration,CSR_pct,RSR_pct,LWR_pct,saved_pct,normalized_cost,recovery_time_ms,checkpoint_traffic_mb
+Full framework,99.6,100,5.76,94.24,0.464,115.9,11.43
+No adaptive timing,78.0,100,35.84,64.16,0.565,128.8,3.63
+No FD-aware placement,81.3,100,22.67,77.33,0.538,126.2,
+No dynamic recovery,99.1,100,100.0,0.0,0.874,174.4,
