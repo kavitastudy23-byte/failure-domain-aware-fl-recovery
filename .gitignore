@@ -1,0 +1,15 @@
+data/cifar10/
+data/femnist/train/
+data/femnist/test/
+
+__pycache__/
+*.pyc
+
+venv/
+.venv/
+
+*.pt
+*.pth
+*.ckpt
+
+outputs/
